@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block content %}
+    <a class="btn btn-dark" href="{{ path('app_logout') }}">déconnexion</a>
+<h1>Mon compte</h1>
+    Bienvenue {{ app.user.firstnName }} dans votre compte.
+    <hr>
+    <a href="{{ path('app_account_password') }}"
+        class="btn btn-info mb-4"
+    >
+        Modifier mon mot de passe
+    </a>
+{% endblock %}
